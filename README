@@ -1,0 +1,18 @@
+These are various demos of iPhone Applications, I have developed.
+
+
+iPhoneAugmentedTest
+--------------------
+This is a sample application using the NyARToolkit library for finding a marker from a sample image.
+The code use OpenGL ES1 for rendering, so you could ignore all shaders related code. 
+
+Compiled and works on XCode 3.2.5 SDK iOS 4.2
+
+=====================
+
+For Questions & Comments:
+
+Kamen Dimitrov
+kamend@gmail.com
+Skype: kamend
+
