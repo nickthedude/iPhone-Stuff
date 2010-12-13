@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2514C27B10084DCA00A42282 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 2514C27910084DCA00A42282 /* Shader.fsh */; };
+		2514C27C10084DCA00A42282 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 2514C27A10084DCA00A42282 /* Shader.vsh */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28EC4C5911D54ECE0027AA9F /* iPhoneAugmentedTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4C5711D54ECE0027AA9F /* iPhoneAugmentedTestViewController.m */; };
+		28EC4C5A11D54ECE0027AA9F /* iPhoneAugmentedTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EC4C5811D54ECE0027AA9F /* iPhoneAugmentedTestViewController.xib */; };
+		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		EE6DB5D112B568EF00B99902 /* NyARToolkitWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB5D012B568EF00B99902 /* NyARToolkitWrapper.mm */; };
+		EE6DB5D912B5691D00B99902 /* 320x240ABGR.raw in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D312B5691D00B99902 /* 320x240ABGR.raw */; };
+		EE6DB5DA12B5691D00B99902 /* camera_para.dat in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D412B5691D00B99902 /* camera_para.dat */; };
+		EE6DB5DB12B5691D00B99902 /* patt.hiro in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D512B5691D00B99902 /* patt.hiro */; };
+		EE6DB5DC12B5691D00B99902 /* patt.kanji in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D612B5691D00B99902 /* patt.kanji */; };
+		EE6DB5DD12B5691D00B99902 /* pattHiro.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D712B5691D00B99902 /* pattHiro.pdf */; };
+		EE6DB5DE12B5691D00B99902 /* pattKanji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5D812B5691D00B99902 /* pattKanji.pdf */; };
+		EE6DB68012B5693400B99902 /* 320x240ABGR.raw in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E312B5693400B99902 /* 320x240ABGR.raw */; };
+		EE6DB68112B5693400B99902 /* camera_para.dat in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E412B5693400B99902 /* camera_para.dat */; };
+		EE6DB68212B5693400B99902 /* patt.hiro in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E512B5693400B99902 /* patt.hiro */; };
+		EE6DB68312B5693400B99902 /* patt.kanji in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E612B5693400B99902 /* patt.kanji */; };
+		EE6DB68412B5693400B99902 /* pattHiro.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E712B5693400B99902 /* pattHiro.pdf */; };
+		EE6DB68512B5693400B99902 /* pattKanji.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB5E812B5693400B99902 /* pattKanji.pdf */; };
+		EE6DB69012B5693400B99902 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB63F12B5693400B99902 /* LICENCE.txt */; };
+		EE6DB69112B5693400B99902 /* readme.ja.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB64012B5693400B99902 /* readme.ja.txt */; };
+		EE6DB69212B5693400B99902 /* INyARBufferReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64312B5693400B99902 /* INyARBufferReader.cpp */; };
+		EE6DB69312B5693400B99902 /* INyARCameraDistortionFactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64412B5693400B99902 /* INyARCameraDistortionFactor.cpp */; };
+		EE6DB69412B5693400B99902 /* INyARColorPatt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64512B5693400B99902 /* INyARColorPatt.cpp */; };
+		EE6DB69512B5693400B99902 /* INyARDoubleMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64612B5693400B99902 /* INyARDoubleMatrix.cpp */; };
+		EE6DB69612B5693400B99902 /* INyARLabeling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64712B5693400B99902 /* INyARLabeling.cpp */; };
+		EE6DB69712B5693400B99902 /* INyARLabelingImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64812B5693400B99902 /* INyARLabelingImage.cpp */; };
+		EE6DB69812B5693400B99902 /* INyARMatchPatt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64912B5693400B99902 /* INyARMatchPatt.cpp */; };
+		EE6DB69912B5693400B99902 /* INyARPca2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64A12B5693400B99902 /* INyARPca2d.cpp */; };
+		EE6DB69A12B5693400B99902 /* INyARRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64B12B5693400B99902 /* INyARRaster.cpp */; };
+		EE6DB69B12B5693400B99902 /* INyARRasterFilter_RgbToBin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64C12B5693400B99902 /* INyARRasterFilter_RgbToBin.cpp */; };
+		EE6DB69C12B5693400B99902 /* INyARRgbPixelReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64D12B5693400B99902 /* INyARRgbPixelReader.cpp */; };
+		EE6DB69D12B5693400B99902 /* INyARRgbRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64E12B5693400B99902 /* INyARRgbRaster.cpp */; };
+		EE6DB69E12B5693400B99902 /* INyARRotTransOptimize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB64F12B5693400B99902 /* INyARRotTransOptimize.cpp */; };
+		EE6DB69F12B5693400B99902 /* INyARSquareDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65012B5693400B99902 /* INyARSquareDetector.cpp */; };
+		EE6DB6A012B5693400B99902 /* INyARTransMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65112B5693400B99902 /* INyARTransMat.cpp */; };
+		EE6DB6A112B5693400B99902 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65212B5693400B99902 /* makefile */; };
+		EE6DB6A212B5693400B99902 /* NyARBinRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65312B5693400B99902 /* NyARBinRaster.cpp */; };
+		EE6DB6A312B5693400B99902 /* NyARBufferReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65412B5693400B99902 /* NyARBufferReader.cpp */; };
+		EE6DB6A412B5693400B99902 /* NyARCameraDistortionFactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65512B5693400B99902 /* NyARCameraDistortionFactor.cpp */; };
+		EE6DB6A512B5693400B99902 /* NyARCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65612B5693400B99902 /* NyARCode.cpp */; };
+		EE6DB6A612B5693400B99902 /* NyARColorPatt_O3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65712B5693400B99902 /* NyARColorPatt_O3.cpp */; };
+		EE6DB6A712B5693400B99902 /* NyARDetectMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65812B5693400B99902 /* NyARDetectMarker.cpp */; };
+		EE6DB6A812B5693400B99902 /* NyARDoubleMatrix22.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65912B5693400B99902 /* NyARDoubleMatrix22.cpp */; };
+		EE6DB6A912B5693400B99902 /* NyARDoubleMatrix33.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65A12B5693400B99902 /* NyARDoubleMatrix33.cpp */; };
+		EE6DB6AA12B5693400B99902 /* NyARDoubleMatrix34.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65B12B5693400B99902 /* NyARDoubleMatrix34.cpp */; };
+		EE6DB6AB12B5693400B99902 /* NyARException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65C12B5693400B99902 /* NyARException.cpp */; };
+		EE6DB6AC12B5693400B99902 /* NyARFitVecCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65D12B5693400B99902 /* NyARFitVecCalculator.cpp */; };
+		EE6DB6AD12B5693400B99902 /* NyARGrayscaleRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65E12B5693400B99902 /* NyARGrayscaleRaster.cpp */; };
+		EE6DB6AE12B5693400B99902 /* NyARIntPointStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB65F12B5693400B99902 /* NyARIntPointStack.cpp */; };
+		EE6DB6AF12B5693400B99902 /* NyARIntRectStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66012B5693400B99902 /* NyARIntRectStack.cpp */; };
+		EE6DB6B012B5693400B99902 /* NyARLabeling_ARToolKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66112B5693400B99902 /* NyARLabeling_ARToolKit.cpp */; };
+		EE6DB6B112B5693400B99902 /* NyARLabelingImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66212B5693400B99902 /* NyARLabelingImage.cpp */; };
+		EE6DB6B212B5693400B99902 /* NyARLabelingLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66312B5693400B99902 /* NyARLabelingLabel.cpp */; };
+		EE6DB6B312B5693400B99902 /* NyARLabelingLabelStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66412B5693400B99902 /* NyARLabelingLabelStack.cpp */; };
+		EE6DB6B412B5693400B99902 /* NyARMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66512B5693400B99902 /* NyARMat.cpp */; };
+		EE6DB6B512B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66612B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.cpp */; };
+		EE6DB6B612B5693400B99902 /* NyARObserv2IdealMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66712B5693400B99902 /* NyARObserv2IdealMap.cpp */; };
+		EE6DB6B712B5693400B99902 /* NyARParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66812B5693400B99902 /* NyARParam.cpp */; };
+		EE6DB6B812B5693400B99902 /* NyARPca2d_MatrixPCA_O2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66912B5693400B99902 /* NyARPca2d_MatrixPCA_O2.cpp */; };
+		EE6DB6B912B5693400B99902 /* NyARPerspectiveProjectionMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66A12B5693400B99902 /* NyARPerspectiveProjectionMatrix.cpp */; };
+		EE6DB6BA12B5693400B99902 /* NyARRaster_BasicClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66B12B5693400B99902 /* NyARRaster_BasicClass.cpp */; };
+		EE6DB6BB12B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66C12B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.cpp */; };
+		EE6DB6BC12B5693400B99902 /* NyARRgbRaster_BasicClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66D12B5693400B99902 /* NyARRgbRaster_BasicClass.cpp */; };
+		EE6DB6BD12B5693400B99902 /* NyARRgbRaster_BGRA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66E12B5693400B99902 /* NyARRgbRaster_BGRA.cpp */; };
+		EE6DB6BE12B5693400B99902 /* NyARRotMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB66F12B5693400B99902 /* NyARRotMatrix.cpp */; };
+		EE6DB6BF12B5693400B99902 /* NyARRotMatrix_ARToolKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67012B5693400B99902 /* NyARRotMatrix_ARToolKit.cpp */; };
+		EE6DB6C012B5693400B99902 /* NyARRotTransOptimize_O2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67112B5693400B99902 /* NyARRotTransOptimize_O2.cpp */; };
+		EE6DB6C112B5693400B99902 /* NyARRotVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67212B5693400B99902 /* NyARRotVector.cpp */; };
+		EE6DB6C212B5693400B99902 /* NyARSingleDetectMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67312B5693400B99902 /* NyARSingleDetectMarker.cpp */; };
+		EE6DB6C312B5693400B99902 /* NyARSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67412B5693400B99902 /* NyARSquare.cpp */; };
+		EE6DB6C412B5693400B99902 /* NyARSquareDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67512B5693400B99902 /* NyARSquareDetector.cpp */; };
+		EE6DB6C512B5693400B99902 /* NyARSquareStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67612B5693400B99902 /* NyARSquareStack.cpp */; };
+		EE6DB6C612B5693400B99902 /* NyARTransMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67712B5693400B99902 /* NyARTransMat.cpp */; };
+		EE6DB6C712B5693400B99902 /* NyARTransMatResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67812B5693400B99902 /* NyARTransMatResult.cpp */; };
+		EE6DB6C812B5693400B99902 /* NyARTransOffset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67912B5693400B99902 /* NyARTransOffset.cpp */; };
+		EE6DB6C912B5693400B99902 /* NyARVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67A12B5693400B99902 /* NyARVec.cpp */; };
+		EE6DB6CA12B5693400B99902 /* NyARVertexCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67B12B5693400B99902 /* NyARVertexCounter.cpp */; };
+		EE6DB6CB12B5693400B99902 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67E12B5693400B99902 /* makefile */; };
+		EE6DB6CC12B5693400B99902 /* NyStdLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE6DB67F12B5693400B99902 /* NyStdLib.cpp */; };
+		EE6DB70612B56CA400B99902 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB70512B56CA400B99902 /* CoreGraphics.framework */; };
+		EE6DB8B312B63AB000B99902 /* scaledImg.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6DB8B212B63AB000B99902 /* scaledImg.png */; };
+		EE6DB95412B65E6300B99902 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB95312B65E6300B99902 /* CoreVideo.framework */; };
+		EE6DB95A12B65E7900B99902 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB95912B65E7900B99902 /* AVFoundation.framework */; };
+		EE6DB96412B65EEA00B99902 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6DB96312B65EEA00B99902 /* CoreMedia.framework */; };
+		EE6DBA8212B676AF00B99902 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6DBA8112B676AF00B99902 /* CaptureSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneAugmentedTestAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneAugmentedTestAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iPhoneAugmentedVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneAugmentedVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2514C27910084DCA00A42282 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		2514C27A10084DCA00A42282 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28EC4C5611D54ECE0027AA9F /* iPhoneAugmentedTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneAugmentedTestViewController.h; sourceTree = "<group>"; };
+		28EC4C5711D54ECE0027AA9F /* iPhoneAugmentedTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneAugmentedTestViewController.m; sourceTree = "<group>"; };
+		28EC4C5811D54ECE0027AA9F /* iPhoneAugmentedTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPhoneAugmentedTestViewController.xib; sourceTree = "<group>"; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iPhoneAugmentedVideo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneAugmentedVideo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* iPhoneAugmentedVideo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhoneAugmentedVideo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EE6DB5CF12B568EF00B99902 /* NyARToolkitWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARToolkitWrapper.h; sourceTree = "<group>"; };
+		EE6DB5D012B568EF00B99902 /* NyARToolkitWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NyARToolkitWrapper.mm; sourceTree = "<group>"; };
+		EE6DB5D312B5691D00B99902 /* 320x240ABGR.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 320x240ABGR.raw; sourceTree = "<group>"; };
+		EE6DB5D412B5691D00B99902 /* camera_para.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera_para.dat; sourceTree = "<group>"; };
+		EE6DB5D512B5691D00B99902 /* patt.hiro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patt.hiro; sourceTree = "<group>"; };
+		EE6DB5D612B5691D00B99902 /* patt.kanji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patt.kanji; sourceTree = "<group>"; };
+		EE6DB5D712B5691D00B99902 /* pattHiro.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pattHiro.pdf; sourceTree = "<group>"; };
+		EE6DB5D812B5691D00B99902 /* pattKanji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pattKanji.pdf; sourceTree = "<group>"; };
+		EE6DB5E312B5693400B99902 /* 320x240ABGR.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 320x240ABGR.raw; sourceTree = "<group>"; };
+		EE6DB5E412B5693400B99902 /* camera_para.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera_para.dat; sourceTree = "<group>"; };
+		EE6DB5E512B5693400B99902 /* patt.hiro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patt.hiro; sourceTree = "<group>"; };
+		EE6DB5E612B5693400B99902 /* patt.kanji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patt.kanji; sourceTree = "<group>"; };
+		EE6DB5E712B5693400B99902 /* pattHiro.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pattHiro.pdf; sourceTree = "<group>"; };
+		EE6DB5E812B5693400B99902 /* pattKanji.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pattKanji.pdf; sourceTree = "<group>"; };
+		EE6DB5FD12B5693400B99902 /* INyARBufferReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARBufferReader.h; sourceTree = "<group>"; };
+		EE6DB5FE12B5693400B99902 /* INyARCameraDistortionFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARCameraDistortionFactor.h; sourceTree = "<group>"; };
+		EE6DB5FF12B5693400B99902 /* INyARColorPatt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARColorPatt.h; sourceTree = "<group>"; };
+		EE6DB60012B5693400B99902 /* INyARDoubleMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARDoubleMatrix.h; sourceTree = "<group>"; };
+		EE6DB60112B5693400B99902 /* INyARLabeling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARLabeling.h; sourceTree = "<group>"; };
+		EE6DB60212B5693400B99902 /* INyARLabelingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARLabelingImage.h; sourceTree = "<group>"; };
+		EE6DB60312B5693400B99902 /* INyARMatchPatt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARMatchPatt.h; sourceTree = "<group>"; };
+		EE6DB60412B5693400B99902 /* INyARPca2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARPca2d.h; sourceTree = "<group>"; };
+		EE6DB60512B5693400B99902 /* INyARRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARRaster.h; sourceTree = "<group>"; };
+		EE6DB60612B5693400B99902 /* INyARRasterFilter_RgbToBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARRasterFilter_RgbToBin.h; sourceTree = "<group>"; };
+		EE6DB60712B5693400B99902 /* INyARRgbPixelReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARRgbPixelReader.h; sourceTree = "<group>"; };
+		EE6DB60812B5693400B99902 /* INyARRgbRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARRgbRaster.h; sourceTree = "<group>"; };
+		EE6DB60912B5693400B99902 /* INyARRotTransOptimize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARRotTransOptimize.h; sourceTree = "<group>"; };
+		EE6DB60A12B5693400B99902 /* INyARSquareDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARSquareDetector.h; sourceTree = "<group>"; };
+		EE6DB60B12B5693400B99902 /* INyARTransMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INyARTransMat.h; sourceTree = "<group>"; };
+		EE6DB60C12B5693400B99902 /* NyAR_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyAR_types.h; sourceTree = "<group>"; };
+		EE6DB60D12B5693400B99902 /* NyARBinRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARBinRaster.h; sourceTree = "<group>"; };
+		EE6DB60E12B5693400B99902 /* NyARBufferReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARBufferReader.h; sourceTree = "<group>"; };
+		EE6DB60F12B5693400B99902 /* NyARCameraDistortionFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARCameraDistortionFactor.h; sourceTree = "<group>"; };
+		EE6DB61012B5693400B99902 /* NyARCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARCode.h; sourceTree = "<group>"; };
+		EE6DB61112B5693400B99902 /* NyARColorPatt_O3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARColorPatt_O3.h; sourceTree = "<group>"; };
+		EE6DB61212B5693400B99902 /* nyarcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nyarcore.h; sourceTree = "<group>"; };
+		EE6DB61312B5693400B99902 /* NyARDetectMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARDetectMarker.h; sourceTree = "<group>"; };
+		EE6DB61412B5693400B99902 /* NyARDoubleMatrix22.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARDoubleMatrix22.h; sourceTree = "<group>"; };
+		EE6DB61512B5693400B99902 /* NyARDoubleMatrix33.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARDoubleMatrix33.h; sourceTree = "<group>"; };
+		EE6DB61612B5693400B99902 /* NyARDoubleMatrix34.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARDoubleMatrix34.h; sourceTree = "<group>"; };
+		EE6DB61712B5693400B99902 /* NyARException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARException.h; sourceTree = "<group>"; };
+		EE6DB61812B5693400B99902 /* NyARFitVecCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARFitVecCalculator.h; sourceTree = "<group>"; };
+		EE6DB61912B5693400B99902 /* NyARGrayscaleRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARGrayscaleRaster.h; sourceTree = "<group>"; };
+		EE6DB61A12B5693400B99902 /* NyARIntPointStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARIntPointStack.h; sourceTree = "<group>"; };
+		EE6DB61B12B5693400B99902 /* NyARIntRectStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARIntRectStack.h; sourceTree = "<group>"; };
+		EE6DB61C12B5693400B99902 /* NyARLabeling_ARToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARLabeling_ARToolKit.h; sourceTree = "<group>"; };
+		EE6DB61D12B5693400B99902 /* NyARLabelingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARLabelingImage.h; sourceTree = "<group>"; };
+		EE6DB61E12B5693400B99902 /* NyARLabelingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARLabelingLabel.h; sourceTree = "<group>"; };
+		EE6DB61F12B5693400B99902 /* NyARLabelingLabelStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARLabelingLabelStack.h; sourceTree = "<group>"; };
+		EE6DB62012B5693400B99902 /* NyARMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARMat.h; sourceTree = "<group>"; };
+		EE6DB62112B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARMatchPatt_Color_WITHOUT_PCA.h; sourceTree = "<group>"; };
+		EE6DB62212B5693400B99902 /* NyARObserv2IdealMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARObserv2IdealMap.h; sourceTree = "<group>"; };
+		EE6DB62312B5693400B99902 /* NyARParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARParam.h; sourceTree = "<group>"; };
+		EE6DB62412B5693400B99902 /* NyARPca2d_MatrixPCA_O2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARPca2d_MatrixPCA_O2.h; sourceTree = "<group>"; };
+		EE6DB62512B5693400B99902 /* NyARPerspectiveProjectionMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARPerspectiveProjectionMatrix.h; sourceTree = "<group>"; };
+		EE6DB62612B5693400B99902 /* NyARRaster_BasicClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRaster_BasicClass.h; sourceTree = "<group>"; };
+		EE6DB62712B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRasterFilter_ARToolkitThreshold.h; sourceTree = "<group>"; };
+		EE6DB62812B5693400B99902 /* NyARRgbRaster_BasicClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRgbRaster_BasicClass.h; sourceTree = "<group>"; };
+		EE6DB62912B5693400B99902 /* NyARRgbRaster_BGRA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRgbRaster_BGRA.h; sourceTree = "<group>"; };
+		EE6DB62A12B5693400B99902 /* NyARRotMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRotMatrix.h; sourceTree = "<group>"; };
+		EE6DB62B12B5693400B99902 /* NyARRotMatrix_ARToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRotMatrix_ARToolKit.h; sourceTree = "<group>"; };
+		EE6DB62C12B5693400B99902 /* NyARRotTransOptimize_O2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRotTransOptimize_O2.h; sourceTree = "<group>"; };
+		EE6DB62D12B5693400B99902 /* NyARRotVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARRotVector.h; sourceTree = "<group>"; };
+		EE6DB62E12B5693400B99902 /* NyARSingleDetectMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARSingleDetectMarker.h; sourceTree = "<group>"; };
+		EE6DB62F12B5693400B99902 /* NyARSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARSquare.h; sourceTree = "<group>"; };
+		EE6DB63012B5693400B99902 /* NyARSquareDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARSquareDetector.h; sourceTree = "<group>"; };
+		EE6DB63112B5693400B99902 /* NyARSquareStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARSquareStack.h; sourceTree = "<group>"; };
+		EE6DB63212B5693400B99902 /* NyARTransMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARTransMat.h; sourceTree = "<group>"; };
+		EE6DB63312B5693400B99902 /* NyARTransMatResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARTransMatResult.h; sourceTree = "<group>"; };
+		EE6DB63412B5693400B99902 /* NyARTransOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARTransOffset.h; sourceTree = "<group>"; };
+		EE6DB63512B5693400B99902 /* NyARVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARVec.h; sourceTree = "<group>"; };
+		EE6DB63612B5693400B99902 /* NyARVertexCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyARVertexCounter.h; sourceTree = "<group>"; };
+		EE6DB63812B5693400B99902 /* NyAR_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyAR_core.h; sourceTree = "<group>"; };
+		EE6DB63912B5693400B99902 /* NyAR_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyAR_utils.h; sourceTree = "<group>"; };
+		EE6DB63B12B5693400B99902 /* NyAR_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyAR_utils.h; sourceTree = "<group>"; };
+		EE6DB63C12B5693400B99902 /* NyArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyArray.h; sourceTree = "<group>"; };
+		EE6DB63D12B5693400B99902 /* NyObjectStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyObjectStack.h; sourceTree = "<group>"; };
+		EE6DB63E12B5693400B99902 /* NyStdLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyStdLib.h; sourceTree = "<group>"; };
+		EE6DB63F12B5693400B99902 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		EE6DB64012B5693400B99902 /* readme.ja.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.ja.txt; sourceTree = "<group>"; };
+		EE6DB64312B5693400B99902 /* INyARBufferReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARBufferReader.cpp; sourceTree = "<group>"; };
+		EE6DB64412B5693400B99902 /* INyARCameraDistortionFactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARCameraDistortionFactor.cpp; sourceTree = "<group>"; };
+		EE6DB64512B5693400B99902 /* INyARColorPatt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARColorPatt.cpp; sourceTree = "<group>"; };
+		EE6DB64612B5693400B99902 /* INyARDoubleMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARDoubleMatrix.cpp; sourceTree = "<group>"; };
+		EE6DB64712B5693400B99902 /* INyARLabeling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARLabeling.cpp; sourceTree = "<group>"; };
+		EE6DB64812B5693400B99902 /* INyARLabelingImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARLabelingImage.cpp; sourceTree = "<group>"; };
+		EE6DB64912B5693400B99902 /* INyARMatchPatt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARMatchPatt.cpp; sourceTree = "<group>"; };
+		EE6DB64A12B5693400B99902 /* INyARPca2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARPca2d.cpp; sourceTree = "<group>"; };
+		EE6DB64B12B5693400B99902 /* INyARRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARRaster.cpp; sourceTree = "<group>"; };
+		EE6DB64C12B5693400B99902 /* INyARRasterFilter_RgbToBin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARRasterFilter_RgbToBin.cpp; sourceTree = "<group>"; };
+		EE6DB64D12B5693400B99902 /* INyARRgbPixelReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARRgbPixelReader.cpp; sourceTree = "<group>"; };
+		EE6DB64E12B5693400B99902 /* INyARRgbRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARRgbRaster.cpp; sourceTree = "<group>"; };
+		EE6DB64F12B5693400B99902 /* INyARRotTransOptimize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARRotTransOptimize.cpp; sourceTree = "<group>"; };
+		EE6DB65012B5693400B99902 /* INyARSquareDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARSquareDetector.cpp; sourceTree = "<group>"; };
+		EE6DB65112B5693400B99902 /* INyARTransMat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INyARTransMat.cpp; sourceTree = "<group>"; };
+		EE6DB65212B5693400B99902 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		EE6DB65312B5693400B99902 /* NyARBinRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARBinRaster.cpp; sourceTree = "<group>"; };
+		EE6DB65412B5693400B99902 /* NyARBufferReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARBufferReader.cpp; sourceTree = "<group>"; };
+		EE6DB65512B5693400B99902 /* NyARCameraDistortionFactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARCameraDistortionFactor.cpp; sourceTree = "<group>"; };
+		EE6DB65612B5693400B99902 /* NyARCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARCode.cpp; sourceTree = "<group>"; };
+		EE6DB65712B5693400B99902 /* NyARColorPatt_O3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARColorPatt_O3.cpp; sourceTree = "<group>"; };
+		EE6DB65812B5693400B99902 /* NyARDetectMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARDetectMarker.cpp; sourceTree = "<group>"; };
+		EE6DB65912B5693400B99902 /* NyARDoubleMatrix22.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARDoubleMatrix22.cpp; sourceTree = "<group>"; };
+		EE6DB65A12B5693400B99902 /* NyARDoubleMatrix33.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARDoubleMatrix33.cpp; sourceTree = "<group>"; };
+		EE6DB65B12B5693400B99902 /* NyARDoubleMatrix34.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARDoubleMatrix34.cpp; sourceTree = "<group>"; };
+		EE6DB65C12B5693400B99902 /* NyARException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARException.cpp; sourceTree = "<group>"; };
+		EE6DB65D12B5693400B99902 /* NyARFitVecCalculator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARFitVecCalculator.cpp; sourceTree = "<group>"; };
+		EE6DB65E12B5693400B99902 /* NyARGrayscaleRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARGrayscaleRaster.cpp; sourceTree = "<group>"; };
+		EE6DB65F12B5693400B99902 /* NyARIntPointStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARIntPointStack.cpp; sourceTree = "<group>"; };
+		EE6DB66012B5693400B99902 /* NyARIntRectStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARIntRectStack.cpp; sourceTree = "<group>"; };
+		EE6DB66112B5693400B99902 /* NyARLabeling_ARToolKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARLabeling_ARToolKit.cpp; sourceTree = "<group>"; };
+		EE6DB66212B5693400B99902 /* NyARLabelingImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARLabelingImage.cpp; sourceTree = "<group>"; };
+		EE6DB66312B5693400B99902 /* NyARLabelingLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARLabelingLabel.cpp; sourceTree = "<group>"; };
+		EE6DB66412B5693400B99902 /* NyARLabelingLabelStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARLabelingLabelStack.cpp; sourceTree = "<group>"; };
+		EE6DB66512B5693400B99902 /* NyARMat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARMat.cpp; sourceTree = "<group>"; };
+		EE6DB66612B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARMatchPatt_Color_WITHOUT_PCA.cpp; sourceTree = "<group>"; };
+		EE6DB66712B5693400B99902 /* NyARObserv2IdealMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARObserv2IdealMap.cpp; sourceTree = "<group>"; };
+		EE6DB66812B5693400B99902 /* NyARParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARParam.cpp; sourceTree = "<group>"; };
+		EE6DB66912B5693400B99902 /* NyARPca2d_MatrixPCA_O2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARPca2d_MatrixPCA_O2.cpp; sourceTree = "<group>"; };
+		EE6DB66A12B5693400B99902 /* NyARPerspectiveProjectionMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARPerspectiveProjectionMatrix.cpp; sourceTree = "<group>"; };
+		EE6DB66B12B5693400B99902 /* NyARRaster_BasicClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRaster_BasicClass.cpp; sourceTree = "<group>"; };
+		EE6DB66C12B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRasterFilter_ARToolkitThreshold.cpp; sourceTree = "<group>"; };
+		EE6DB66D12B5693400B99902 /* NyARRgbRaster_BasicClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRgbRaster_BasicClass.cpp; sourceTree = "<group>"; };
+		EE6DB66E12B5693400B99902 /* NyARRgbRaster_BGRA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRgbRaster_BGRA.cpp; sourceTree = "<group>"; };
+		EE6DB66F12B5693400B99902 /* NyARRotMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRotMatrix.cpp; sourceTree = "<group>"; };
+		EE6DB67012B5693400B99902 /* NyARRotMatrix_ARToolKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRotMatrix_ARToolKit.cpp; sourceTree = "<group>"; };
+		EE6DB67112B5693400B99902 /* NyARRotTransOptimize_O2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRotTransOptimize_O2.cpp; sourceTree = "<group>"; };
+		EE6DB67212B5693400B99902 /* NyARRotVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARRotVector.cpp; sourceTree = "<group>"; };
+		EE6DB67312B5693400B99902 /* NyARSingleDetectMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARSingleDetectMarker.cpp; sourceTree = "<group>"; };
+		EE6DB67412B5693400B99902 /* NyARSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARSquare.cpp; sourceTree = "<group>"; };
+		EE6DB67512B5693400B99902 /* NyARSquareDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARSquareDetector.cpp; sourceTree = "<group>"; };
+		EE6DB67612B5693400B99902 /* NyARSquareStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARSquareStack.cpp; sourceTree = "<group>"; };
+		EE6DB67712B5693400B99902 /* NyARTransMat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARTransMat.cpp; sourceTree = "<group>"; };
+		EE6DB67812B5693400B99902 /* NyARTransMatResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARTransMatResult.cpp; sourceTree = "<group>"; };
+		EE6DB67912B5693400B99902 /* NyARTransOffset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARTransOffset.cpp; sourceTree = "<group>"; };
+		EE6DB67A12B5693400B99902 /* NyARVec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARVec.cpp; sourceTree = "<group>"; };
+		EE6DB67B12B5693400B99902 /* NyARVertexCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyARVertexCounter.cpp; sourceTree = "<group>"; };
+		EE6DB67E12B5693400B99902 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		EE6DB67F12B5693400B99902 /* NyStdLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NyStdLib.cpp; sourceTree = "<group>"; };
+		EE6DB70512B56CA400B99902 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE6DB8B212B63AB000B99902 /* scaledImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaledImg.png; sourceTree = "<group>"; };
+		EE6DB95312B65E6300B99902 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EE6DB95912B65E7900B99902 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EE6DB96312B65EEA00B99902 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EE6DBA8012B676AF00B99902 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		EE6DBA8112B676AF00B99902 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				EE6DB70612B56CA400B99902 /* CoreGraphics.framework in Frameworks */,
+				EE6DB95412B65E6300B99902 /* CoreVideo.framework in Frameworks */,
+				EE6DB95A12B65E7900B99902 /* AVFoundation.framework in Frameworks */,
+				EE6DB96412B65EEA00B99902 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DBA8012B676AF00B99902 /* CaptureSessionManager.h */,
+				EE6DBA8112B676AF00B99902 /* CaptureSessionManager.m */,
+				EE6DB5E112B5693400B99902 /* NyARToolkit */,
+				EE6DB5CF12B568EF00B99902 /* NyARToolkitWrapper.h */,
+				EE6DB5D012B568EF00B99902 /* NyARToolkitWrapper.mm */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+				1D3623240D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.h */,
+				1D3623250D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.m */,
+				28EC4C5611D54ECE0027AA9F /* iPhoneAugmentedTestViewController.h */,
+				28EC4C5711D54ECE0027AA9F /* iPhoneAugmentedTestViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iPhoneAugmentedVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2514C27610084DB600A42282 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				2514C27910084DCA00A42282 /* Shader.fsh */,
+				2514C27A10084DCA00A42282 /* Shader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				2514C27610084DB600A42282 /* Shaders */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iPhoneAugmentedVideo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB8B212B63AB000B99902 /* scaledImg.png */,
+				EE6DB5D212B5691D00B99902 /* data */,
+				28EC4C5811D54ECE0027AA9F /* iPhoneAugmentedTestViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* iPhoneAugmentedVideo-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				EE6DB70512B56CA400B99902 /* CoreGraphics.framework */,
+				EE6DB95312B65E6300B99902 /* CoreVideo.framework */,
+				EE6DB95912B65E7900B99902 /* AVFoundation.framework */,
+				EE6DB96312B65EEA00B99902 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE6DB5D212B5691D00B99902 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB5D312B5691D00B99902 /* 320x240ABGR.raw */,
+				EE6DB5D412B5691D00B99902 /* camera_para.dat */,
+				EE6DB5D512B5691D00B99902 /* patt.hiro */,
+				EE6DB5D612B5691D00B99902 /* patt.kanji */,
+				EE6DB5D712B5691D00B99902 /* pattHiro.pdf */,
+				EE6DB5D812B5691D00B99902 /* pattKanji.pdf */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EE6DB5E112B5693400B99902 /* NyARToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB5E212B5693400B99902 /* data */,
+				EE6DB5FB12B5693400B99902 /* inc */,
+				EE6DB63F12B5693400B99902 /* LICENCE.txt */,
+				EE6DB64012B5693400B99902 /* readme.ja.txt */,
+				EE6DB64112B5693400B99902 /* src */,
+			);
+			path = NyARToolkit;
+			sourceTree = "<group>";
+		};
+		EE6DB5E212B5693400B99902 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB5E312B5693400B99902 /* 320x240ABGR.raw */,
+				EE6DB5E412B5693400B99902 /* camera_para.dat */,
+				EE6DB5E512B5693400B99902 /* patt.hiro */,
+				EE6DB5E612B5693400B99902 /* patt.kanji */,
+				EE6DB5E712B5693400B99902 /* pattHiro.pdf */,
+				EE6DB5E812B5693400B99902 /* pattKanji.pdf */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EE6DB5FB12B5693400B99902 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB5FC12B5693400B99902 /* core */,
+				EE6DB63712B5693400B99902 /* core2 */,
+				EE6DB63812B5693400B99902 /* NyAR_core.h */,
+				EE6DB63912B5693400B99902 /* NyAR_utils.h */,
+				EE6DB63A12B5693400B99902 /* utils */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		EE6DB5FC12B5693400B99902 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB5FD12B5693400B99902 /* INyARBufferReader.h */,
+				EE6DB5FE12B5693400B99902 /* INyARCameraDistortionFactor.h */,
+				EE6DB5FF12B5693400B99902 /* INyARColorPatt.h */,
+				EE6DB60012B5693400B99902 /* INyARDoubleMatrix.h */,
+				EE6DB60112B5693400B99902 /* INyARLabeling.h */,
+				EE6DB60212B5693400B99902 /* INyARLabelingImage.h */,
+				EE6DB60312B5693400B99902 /* INyARMatchPatt.h */,
+				EE6DB60412B5693400B99902 /* INyARPca2d.h */,
+				EE6DB60512B5693400B99902 /* INyARRaster.h */,
+				EE6DB60612B5693400B99902 /* INyARRasterFilter_RgbToBin.h */,
+				EE6DB60712B5693400B99902 /* INyARRgbPixelReader.h */,
+				EE6DB60812B5693400B99902 /* INyARRgbRaster.h */,
+				EE6DB60912B5693400B99902 /* INyARRotTransOptimize.h */,
+				EE6DB60A12B5693400B99902 /* INyARSquareDetector.h */,
+				EE6DB60B12B5693400B99902 /* INyARTransMat.h */,
+				EE6DB60C12B5693400B99902 /* NyAR_types.h */,
+				EE6DB60D12B5693400B99902 /* NyARBinRaster.h */,
+				EE6DB60E12B5693400B99902 /* NyARBufferReader.h */,
+				EE6DB60F12B5693400B99902 /* NyARCameraDistortionFactor.h */,
+				EE6DB61012B5693400B99902 /* NyARCode.h */,
+				EE6DB61112B5693400B99902 /* NyARColorPatt_O3.h */,
+				EE6DB61212B5693400B99902 /* nyarcore.h */,
+				EE6DB61312B5693400B99902 /* NyARDetectMarker.h */,
+				EE6DB61412B5693400B99902 /* NyARDoubleMatrix22.h */,
+				EE6DB61512B5693400B99902 /* NyARDoubleMatrix33.h */,
+				EE6DB61612B5693400B99902 /* NyARDoubleMatrix34.h */,
+				EE6DB61712B5693400B99902 /* NyARException.h */,
+				EE6DB61812B5693400B99902 /* NyARFitVecCalculator.h */,
+				EE6DB61912B5693400B99902 /* NyARGrayscaleRaster.h */,
+				EE6DB61A12B5693400B99902 /* NyARIntPointStack.h */,
+				EE6DB61B12B5693400B99902 /* NyARIntRectStack.h */,
+				EE6DB61C12B5693400B99902 /* NyARLabeling_ARToolKit.h */,
+				EE6DB61D12B5693400B99902 /* NyARLabelingImage.h */,
+				EE6DB61E12B5693400B99902 /* NyARLabelingLabel.h */,
+				EE6DB61F12B5693400B99902 /* NyARLabelingLabelStack.h */,
+				EE6DB62012B5693400B99902 /* NyARMat.h */,
+				EE6DB62112B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.h */,
+				EE6DB62212B5693400B99902 /* NyARObserv2IdealMap.h */,
+				EE6DB62312B5693400B99902 /* NyARParam.h */,
+				EE6DB62412B5693400B99902 /* NyARPca2d_MatrixPCA_O2.h */,
+				EE6DB62512B5693400B99902 /* NyARPerspectiveProjectionMatrix.h */,
+				EE6DB62612B5693400B99902 /* NyARRaster_BasicClass.h */,
+				EE6DB62712B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.h */,
+				EE6DB62812B5693400B99902 /* NyARRgbRaster_BasicClass.h */,
+				EE6DB62912B5693400B99902 /* NyARRgbRaster_BGRA.h */,
+				EE6DB62A12B5693400B99902 /* NyARRotMatrix.h */,
+				EE6DB62B12B5693400B99902 /* NyARRotMatrix_ARToolKit.h */,
+				EE6DB62C12B5693400B99902 /* NyARRotTransOptimize_O2.h */,
+				EE6DB62D12B5693400B99902 /* NyARRotVector.h */,
+				EE6DB62E12B5693400B99902 /* NyARSingleDetectMarker.h */,
+				EE6DB62F12B5693400B99902 /* NyARSquare.h */,
+				EE6DB63012B5693400B99902 /* NyARSquareDetector.h */,
+				EE6DB63112B5693400B99902 /* NyARSquareStack.h */,
+				EE6DB63212B5693400B99902 /* NyARTransMat.h */,
+				EE6DB63312B5693400B99902 /* NyARTransMatResult.h */,
+				EE6DB63412B5693400B99902 /* NyARTransOffset.h */,
+				EE6DB63512B5693400B99902 /* NyARVec.h */,
+				EE6DB63612B5693400B99902 /* NyARVertexCounter.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		EE6DB63712B5693400B99902 /* core2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core2;
+			sourceTree = "<group>";
+		};
+		EE6DB63A12B5693400B99902 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB63B12B5693400B99902 /* NyAR_utils.h */,
+				EE6DB63C12B5693400B99902 /* NyArray.h */,
+				EE6DB63D12B5693400B99902 /* NyObjectStack.h */,
+				EE6DB63E12B5693400B99902 /* NyStdLib.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EE6DB64112B5693400B99902 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB64212B5693400B99902 /* core */,
+				EE6DB67C12B5693400B99902 /* core2 */,
+				EE6DB67D12B5693400B99902 /* utils */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EE6DB64212B5693400B99902 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB64312B5693400B99902 /* INyARBufferReader.cpp */,
+				EE6DB64412B5693400B99902 /* INyARCameraDistortionFactor.cpp */,
+				EE6DB64512B5693400B99902 /* INyARColorPatt.cpp */,
+				EE6DB64612B5693400B99902 /* INyARDoubleMatrix.cpp */,
+				EE6DB64712B5693400B99902 /* INyARLabeling.cpp */,
+				EE6DB64812B5693400B99902 /* INyARLabelingImage.cpp */,
+				EE6DB64912B5693400B99902 /* INyARMatchPatt.cpp */,
+				EE6DB64A12B5693400B99902 /* INyARPca2d.cpp */,
+				EE6DB64B12B5693400B99902 /* INyARRaster.cpp */,
+				EE6DB64C12B5693400B99902 /* INyARRasterFilter_RgbToBin.cpp */,
+				EE6DB64D12B5693400B99902 /* INyARRgbPixelReader.cpp */,
+				EE6DB64E12B5693400B99902 /* INyARRgbRaster.cpp */,
+				EE6DB64F12B5693400B99902 /* INyARRotTransOptimize.cpp */,
+				EE6DB65012B5693400B99902 /* INyARSquareDetector.cpp */,
+				EE6DB65112B5693400B99902 /* INyARTransMat.cpp */,
+				EE6DB65212B5693400B99902 /* makefile */,
+				EE6DB65312B5693400B99902 /* NyARBinRaster.cpp */,
+				EE6DB65412B5693400B99902 /* NyARBufferReader.cpp */,
+				EE6DB65512B5693400B99902 /* NyARCameraDistortionFactor.cpp */,
+				EE6DB65612B5693400B99902 /* NyARCode.cpp */,
+				EE6DB65712B5693400B99902 /* NyARColorPatt_O3.cpp */,
+				EE6DB65812B5693400B99902 /* NyARDetectMarker.cpp */,
+				EE6DB65912B5693400B99902 /* NyARDoubleMatrix22.cpp */,
+				EE6DB65A12B5693400B99902 /* NyARDoubleMatrix33.cpp */,
+				EE6DB65B12B5693400B99902 /* NyARDoubleMatrix34.cpp */,
+				EE6DB65C12B5693400B99902 /* NyARException.cpp */,
+				EE6DB65D12B5693400B99902 /* NyARFitVecCalculator.cpp */,
+				EE6DB65E12B5693400B99902 /* NyARGrayscaleRaster.cpp */,
+				EE6DB65F12B5693400B99902 /* NyARIntPointStack.cpp */,
+				EE6DB66012B5693400B99902 /* NyARIntRectStack.cpp */,
+				EE6DB66112B5693400B99902 /* NyARLabeling_ARToolKit.cpp */,
+				EE6DB66212B5693400B99902 /* NyARLabelingImage.cpp */,
+				EE6DB66312B5693400B99902 /* NyARLabelingLabel.cpp */,
+				EE6DB66412B5693400B99902 /* NyARLabelingLabelStack.cpp */,
+				EE6DB66512B5693400B99902 /* NyARMat.cpp */,
+				EE6DB66612B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.cpp */,
+				EE6DB66712B5693400B99902 /* NyARObserv2IdealMap.cpp */,
+				EE6DB66812B5693400B99902 /* NyARParam.cpp */,
+				EE6DB66912B5693400B99902 /* NyARPca2d_MatrixPCA_O2.cpp */,
+				EE6DB66A12B5693400B99902 /* NyARPerspectiveProjectionMatrix.cpp */,
+				EE6DB66B12B5693400B99902 /* NyARRaster_BasicClass.cpp */,
+				EE6DB66C12B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.cpp */,
+				EE6DB66D12B5693400B99902 /* NyARRgbRaster_BasicClass.cpp */,
+				EE6DB66E12B5693400B99902 /* NyARRgbRaster_BGRA.cpp */,
+				EE6DB66F12B5693400B99902 /* NyARRotMatrix.cpp */,
+				EE6DB67012B5693400B99902 /* NyARRotMatrix_ARToolKit.cpp */,
+				EE6DB67112B5693400B99902 /* NyARRotTransOptimize_O2.cpp */,
+				EE6DB67212B5693400B99902 /* NyARRotVector.cpp */,
+				EE6DB67312B5693400B99902 /* NyARSingleDetectMarker.cpp */,
+				EE6DB67412B5693400B99902 /* NyARSquare.cpp */,
+				EE6DB67512B5693400B99902 /* NyARSquareDetector.cpp */,
+				EE6DB67612B5693400B99902 /* NyARSquareStack.cpp */,
+				EE6DB67712B5693400B99902 /* NyARTransMat.cpp */,
+				EE6DB67812B5693400B99902 /* NyARTransMatResult.cpp */,
+				EE6DB67912B5693400B99902 /* NyARTransOffset.cpp */,
+				EE6DB67A12B5693400B99902 /* NyARVec.cpp */,
+				EE6DB67B12B5693400B99902 /* NyARVertexCounter.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		EE6DB67C12B5693400B99902 /* core2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core2;
+			sourceTree = "<group>";
+		};
+		EE6DB67D12B5693400B99902 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DB67E12B5693400B99902 /* makefile */,
+				EE6DB67F12B5693400B99902 /* NyStdLib.cpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iPhoneAugmentedVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhoneAugmentedVideo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPhoneAugmentedVideo;
+			productName = iPhoneAugmentedTest;
+			productReference = 1D6058910D05DD3D006BFB54 /* iPhoneAugmentedVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhoneAugmentedVideo" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iPhoneAugmentedVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2514C27B10084DCA00A42282 /* Shader.fsh in Resources */,
+				2514C27C10084DCA00A42282 /* Shader.vsh in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				28EC4C5A11D54ECE0027AA9F /* iPhoneAugmentedTestViewController.xib in Resources */,
+				EE6DB5D912B5691D00B99902 /* 320x240ABGR.raw in Resources */,
+				EE6DB5DA12B5691D00B99902 /* camera_para.dat in Resources */,
+				EE6DB5DB12B5691D00B99902 /* patt.hiro in Resources */,
+				EE6DB5DC12B5691D00B99902 /* patt.kanji in Resources */,
+				EE6DB5DD12B5691D00B99902 /* pattHiro.pdf in Resources */,
+				EE6DB5DE12B5691D00B99902 /* pattKanji.pdf in Resources */,
+				EE6DB68012B5693400B99902 /* 320x240ABGR.raw in Resources */,
+				EE6DB68112B5693400B99902 /* camera_para.dat in Resources */,
+				EE6DB68212B5693400B99902 /* patt.hiro in Resources */,
+				EE6DB68312B5693400B99902 /* patt.kanji in Resources */,
+				EE6DB68412B5693400B99902 /* pattHiro.pdf in Resources */,
+				EE6DB68512B5693400B99902 /* pattKanji.pdf in Resources */,
+				EE6DB69012B5693400B99902 /* LICENCE.txt in Resources */,
+				EE6DB69112B5693400B99902 /* readme.ja.txt in Resources */,
+				EE6DB8B312B63AB000B99902 /* scaledImg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* iPhoneAugmentedTestAppDelegate.m in Sources */,
+				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
+				28EC4C5911D54ECE0027AA9F /* iPhoneAugmentedTestViewController.m in Sources */,
+				EE6DB5D112B568EF00B99902 /* NyARToolkitWrapper.mm in Sources */,
+				EE6DB69212B5693400B99902 /* INyARBufferReader.cpp in Sources */,
+				EE6DB69312B5693400B99902 /* INyARCameraDistortionFactor.cpp in Sources */,
+				EE6DB69412B5693400B99902 /* INyARColorPatt.cpp in Sources */,
+				EE6DB69512B5693400B99902 /* INyARDoubleMatrix.cpp in Sources */,
+				EE6DB69612B5693400B99902 /* INyARLabeling.cpp in Sources */,
+				EE6DB69712B5693400B99902 /* INyARLabelingImage.cpp in Sources */,
+				EE6DB69812B5693400B99902 /* INyARMatchPatt.cpp in Sources */,
+				EE6DB69912B5693400B99902 /* INyARPca2d.cpp in Sources */,
+				EE6DB69A12B5693400B99902 /* INyARRaster.cpp in Sources */,
+				EE6DB69B12B5693400B99902 /* INyARRasterFilter_RgbToBin.cpp in Sources */,
+				EE6DB69C12B5693400B99902 /* INyARRgbPixelReader.cpp in Sources */,
+				EE6DB69D12B5693400B99902 /* INyARRgbRaster.cpp in Sources */,
+				EE6DB69E12B5693400B99902 /* INyARRotTransOptimize.cpp in Sources */,
+				EE6DB69F12B5693400B99902 /* INyARSquareDetector.cpp in Sources */,
+				EE6DB6A012B5693400B99902 /* INyARTransMat.cpp in Sources */,
+				EE6DB6A112B5693400B99902 /* makefile in Sources */,
+				EE6DB6A212B5693400B99902 /* NyARBinRaster.cpp in Sources */,
+				EE6DB6A312B5693400B99902 /* NyARBufferReader.cpp in Sources */,
+				EE6DB6A412B5693400B99902 /* NyARCameraDistortionFactor.cpp in Sources */,
+				EE6DB6A512B5693400B99902 /* NyARCode.cpp in Sources */,
+				EE6DB6A612B5693400B99902 /* NyARColorPatt_O3.cpp in Sources */,
+				EE6DB6A712B5693400B99902 /* NyARDetectMarker.cpp in Sources */,
+				EE6DB6A812B5693400B99902 /* NyARDoubleMatrix22.cpp in Sources */,
+				EE6DB6A912B5693400B99902 /* NyARDoubleMatrix33.cpp in Sources */,
+				EE6DB6AA12B5693400B99902 /* NyARDoubleMatrix34.cpp in Sources */,
+				EE6DB6AB12B5693400B99902 /* NyARException.cpp in Sources */,
+				EE6DB6AC12B5693400B99902 /* NyARFitVecCalculator.cpp in Sources */,
+				EE6DB6AD12B5693400B99902 /* NyARGrayscaleRaster.cpp in Sources */,
+				EE6DB6AE12B5693400B99902 /* NyARIntPointStack.cpp in Sources */,
+				EE6DB6AF12B5693400B99902 /* NyARIntRectStack.cpp in Sources */,
+				EE6DB6B012B5693400B99902 /* NyARLabeling_ARToolKit.cpp in Sources */,
+				EE6DB6B112B5693400B99902 /* NyARLabelingImage.cpp in Sources */,
+				EE6DB6B212B5693400B99902 /* NyARLabelingLabel.cpp in Sources */,
+				EE6DB6B312B5693400B99902 /* NyARLabelingLabelStack.cpp in Sources */,
+				EE6DB6B412B5693400B99902 /* NyARMat.cpp in Sources */,
+				EE6DB6B512B5693400B99902 /* NyARMatchPatt_Color_WITHOUT_PCA.cpp in Sources */,
+				EE6DB6B612B5693400B99902 /* NyARObserv2IdealMap.cpp in Sources */,
+				EE6DB6B712B5693400B99902 /* NyARParam.cpp in Sources */,
+				EE6DB6B812B5693400B99902 /* NyARPca2d_MatrixPCA_O2.cpp in Sources */,
+				EE6DB6B912B5693400B99902 /* NyARPerspectiveProjectionMatrix.cpp in Sources */,
+				EE6DB6BA12B5693400B99902 /* NyARRaster_BasicClass.cpp in Sources */,
+				EE6DB6BB12B5693400B99902 /* NyARRasterFilter_ARToolkitThreshold.cpp in Sources */,
+				EE6DB6BC12B5693400B99902 /* NyARRgbRaster_BasicClass.cpp in Sources */,
+				EE6DB6BD12B5693400B99902 /* NyARRgbRaster_BGRA.cpp in Sources */,
+				EE6DB6BE12B5693400B99902 /* NyARRotMatrix.cpp in Sources */,
+				EE6DB6BF12B5693400B99902 /* NyARRotMatrix_ARToolKit.cpp in Sources */,
+				EE6DB6C012B5693400B99902 /* NyARRotTransOptimize_O2.cpp in Sources */,
+				EE6DB6C112B5693400B99902 /* NyARRotVector.cpp in Sources */,
+				EE6DB6C212B5693400B99902 /* NyARSingleDetectMarker.cpp in Sources */,
+				EE6DB6C312B5693400B99902 /* NyARSquare.cpp in Sources */,
+				EE6DB6C412B5693400B99902 /* NyARSquareDetector.cpp in Sources */,
+				EE6DB6C512B5693400B99902 /* NyARSquareStack.cpp in Sources */,
+				EE6DB6C612B5693400B99902 /* NyARTransMat.cpp in Sources */,
+				EE6DB6C712B5693400B99902 /* NyARTransMatResult.cpp in Sources */,
+				EE6DB6C812B5693400B99902 /* NyARTransOffset.cpp in Sources */,
+				EE6DB6C912B5693400B99902 /* NyARVec.cpp in Sources */,
+				EE6DB6CA12B5693400B99902 /* NyARVertexCounter.cpp in Sources */,
+				EE6DB6CB12B5693400B99902 /* makefile in Sources */,
+				EE6DB6CC12B5693400B99902 /* NyStdLib.cpp in Sources */,
+				EE6DBA8212B676AF00B99902 /* CaptureSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhoneAugmentedVideo_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "iPhoneAugmentedVideo-Info.plist";
+				PRODUCT_NAME = iPhoneAugmentedVideo;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhoneAugmentedVideo_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "iPhoneAugmentedVideo-Info.plist";
+				PRODUCT_NAME = iPhoneAugmentedVideo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhoneAugmentedVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhoneAugmentedVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
