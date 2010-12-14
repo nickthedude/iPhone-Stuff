@@ -14,11 +14,31 @@ OpenGL ES1 is used rendering, so you could ignore all shaders related code.
 
 Compiled and works on XCode 3.2.5 SDK iOS 4.2
 
-=====================
+
+iPhoneAugmentedVideo
+-------------------
+A sample application for live single marker detection from the iPhone Camera. 
+
+I use the AVFoundation for extrating every frame from the video and NyARToolkitCPP 2.5.4 for the marker detection.
+
+Compiled and works on XCode 3.2.5 SDK iOS 4.2
+
+Part of the code is based on the tutorial at:
+
+http://www.morethantechnical.com/2009/07/01/augmented-reality-on-the-iphone-using-nyartoolkit-w-code/
+
+but it is slightly modified in order to work with the latest NyARToolkitCPP version.
+
+
+/****************************
+
+     H A V E F U N ! :=)
+
+***************************/
 
 For Questions & Comments:
 
 Kamen Dimitrov
+http://www.socoolapps.com/
 kamend@gmail.com
 Skype: kamend
-
