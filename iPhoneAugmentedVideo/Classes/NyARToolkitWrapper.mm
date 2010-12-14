@@ -32,6 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "NyAR_core.h"
 
+
 #include <cstdio>
 #include <iostream>
 #include <fstream>
@@ -40,20 +41,18 @@ using namespace std;
 using namespace NyARToolkitCPP;
 
 NyARCode* code=NULL;
-NyARRgbRaster_BGRA* ra;
+
+NyARRgbRaster_BGRA *ra;
 NyARSingleDetectMarker* ar;
 NyARParam ap;
 
 void arglCameraFrustumRH(const NyARParam& cparam, const double focalmin, const double focalmax, double m_projection[16]);
 
-void toCameraViewRH(NyARTransMatResult mat, float ogl_result[]);
+void toCameraViewRH(NyARTransMatResult &mat, float ogl_result[]);
 
 @implementation NyARToolkitWrapper
 @synthesize cgctx,ctxWidth,ctxHeight,texCtx,wasInit;
 
--(void)doMain {
-	_wrapper_main(0, NULL);
-}
 
 unsigned char* load_file_image(const char* i_filename)
 {
@@ -78,46 +77,37 @@ unsigned char* load_file_image(const char* i_filename)
 }
 
 -(void)initNyARTwithWidth:(int)width andHeight:(int)height {
+	
 	ap.setEndian(TNyAREndian_LITTLE);
 	
+	// load the camera_para.dat file
+	
 	NSString* str = [[NSBundle mainBundle] pathForResource:@"camera_para" ofType:@"dat"];
-	//NSLog(str);
 	char cstr[512] = {0};
 	[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-	
+
 	ap.loadARParamFromFile(cstr);
 	ap.changeScreenSize(width, height);
 	
-//	unsigned char* buf;
-	
+	// load pattern
 	code= new NyARCode(16, 16);
 	
 	str = [[NSBundle mainBundle] pathForResource:@"patt" ofType:@"hiro"];
-	//NSLog(str);
 	[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-	
 	code->loadARPattFromFile(cstr);
 	
-//	str = [[NSBundle mainBundle] pathForResource:@"320x240ABGR" ofType:@"raw"];
-//	NSLog(str);
-//	[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-//	
-//	unsigned char* buf=load_file_image(cstr);
+	ra = new NyARRgbRaster_BGRA(width, height,false);
+	ar = new NyARSingleDetectMarker(&ap, code, 80.0,ra->getBufferType());
 	
-	ra = new NyARRgbRaster_BGRA(width, height);
-	//ÉâÉbÉvÇ∑ÇÈÉoÉbÉtÉ@ÇÉZÉbÉgÇ∑ÇÈÅB
-//	ra->setBuffer(buf);
+	code=NULL;
 	
-	// ÇPÉpÉ^Å[ÉìÇÃÇ›Çí«ê’Ç∑ÇÈÉNÉâÉXÇçÏê¨
-	ar = new NyARSingleDetectMarker(ap, code, 80.0);
-	code=NULL;/*codeÇÃèäóLå†ÇÕNyARSingleDetectMarkerÇ÷ìnà⁄ìÆ*/
 	ar->setContinueMode(false);
 	
 	wasInit = true;
 }
 
 -(void)setNyARTBuffer:(Byte*)buf {
-	ra->setBuffer(buf);
+	ra->wrapBuffer(buf);
 }
 
 -(void)setNyARTWidth:(int)width andHeight:(int)height {
@@ -129,14 +119,6 @@ unsigned char* load_file_image(const char* i_filename)
 -(bool)detectMarker:(float[])resultMat {
 	NyARTransMatResult result_mat;
 	
-//	NSString* str = [[NSBundle mainBundle] pathForResource:@"320x240ABGR" ofType:@"raw"];
-//	//NSLog(str);
-//	char cstr[256] = {0};
-//	[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-//		
-//	unsigned char* buf=load_file_image(cstr);
-//	ra->setBuffer(buf);
-	
 	if(ar->detectMarkerLite(*ra, 100)) {
 		ar->getTransmationMatrix(result_mat);
 		toCameraViewRH(result_mat, resultMat);
@@ -147,7 +129,7 @@ unsigned char* load_file_image(const char* i_filename)
 
 }
 
--(void)detectMarkerWithIamge:(CGImageRef)inImage intoMatrix:(float[])m
+-(void)detectMarkerWithImage:(CGImageRef)inImage intoMatrix:(float[])m
 {
     size_t w = CGImageGetWidth(inImage);
     size_t h = CGImageGetHeight(inImage);
@@ -156,7 +138,7 @@ unsigned char* load_file_image(const char* i_filename)
     { 
         cgctx = CreateARGBBitmapContext(inImage);
 		void *data = CGBitmapContextGetData (cgctx);
-		ra->setBuffer((NyAR_BYTE_t*)data);
+		ra->wrapBuffer((NyAR_BYTE_t*)data);
 		
 		ctxWidth = w;
 		ctxHeight = h;
@@ -245,89 +227,8 @@ CGContextRef CreateARGBBitmapContextWithWidthAndHeight(int pixelsWide, int pixel
 }
 
 
-int _wrapper_main(int argc,char* argv[])
-{
-	{
-		// ARópÉJÉÅÉâÉpÉâÉÅÉ^ÉtÉ@ÉCÉãÇÉçÅ[Éh
-		NyARParam ap;
-		//CPUÇÃÉGÉìÉfÉBÉAÉìÇéwíËÇµÇƒâ∫Ç≥Ç¢ÅB
-		ap.setEndian(TNyAREndian_LITTLE);
-		
-		NSString* str = [[NSBundle mainBundle] pathForResource:@"camera_para" ofType:@"dat"];
-		NSLog(str);
-		char cstr[512] = {0};
-		[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-		
-		ap.loadARParamFromFile(cstr);
-		ap.changeScreenSize(320, 240);
-		
-		// ARópÇÃÉpÉ^Å[ÉìÉRÅ[ÉhÇì«Ç›èoÇµ
-		NyARCode* code=NULL;
-		unsigned char* buf;
-		NyARRgbRaster_BGRA* ra;
-		NyARSingleDetectMarker* ar;
-		
-		
-		code= new NyARCode(16, 16);
 
-		str = [[NSBundle mainBundle] pathForResource:@"patt" ofType:@"hiro"];
-		NSLog(str);
-		[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-		
-		code->loadARPattFromFile(cstr);
-
-		str = [[NSBundle mainBundle] pathForResource:@"320x240ABGR" ofType:@"raw"];
-		NSLog(str);
-		[str getCString:cstr maxLength:512 encoding:NSASCIIStringEncoding];
-		
-		buf=load_file_image(cstr);
-		
-		ra = new NyARRgbRaster_BGRA(320, 240);
-		//ÉâÉbÉvÇ∑ÇÈÉoÉbÉtÉ@ÇÉZÉbÉgÇ∑ÇÈÅB
-		ra->setBuffer(buf);
-		
-		// ÇPÉpÉ^Å[ÉìÇÃÇ›Çí«ê’Ç∑ÇÈÉNÉâÉXÇçÏê¨
-		ar = new NyARSingleDetectMarker(ap, code, 80.0);
-		code=NULL;/*codeÇÃèäóLå†ÇÕNyARSingleDetectMarkerÇ÷ìnà⁄ìÆ*/
-		ar->setContinueMode(false);
-		
-		NyARTransMatResult result_mat;
-		
-		ar->detectMarkerLite(*ra, 100);
-		ar->getTransmationMatrix(result_mat);
-		printf("%s",
-			   "performance test of NyARToolkit.\n"
-			   "This test measures processing time of marker detection and transform matrix calculation 1000 times.\n");
-		printf("Marker confidence\n cf=%f,direction=%d\n",ar->getConfidence(),ar->getDirection());
-		printf("Transform Matrix\n");
-		printf(
-			   "% 4.8f,% 4.8f,% 4.8f,% 4.8f\n"
-			   "% 4.8f,% 4.8f,% 4.8f,% 4.8f\n"
-			   "% 4.8f,% 4.8f,% 4.8f,% 4.8f\n",
-			   result_mat.m00,result_mat.m01,result_mat.m02,result_mat.m03,
-			   result_mat.m10,result_mat.m11,result_mat.m12,result_mat.m13,
-			   result_mat.m20,result_mat.m21,result_mat.m22,result_mat.m23);
-		
-		//DWORD st=GetTickCount();
-		NSDate* start = [NSDate date];
-		
-		// É}Å[ÉJÅ[Çåüèo1000âÒï™ÇÃèàóùéûä‘Çåvë™
-		for (int i = 0; i < 100; i++) {
-			// ïœä∑çsóÒÇéÊìæ
-			ar->detectMarkerLite(*ra, 100);
-			ar->getTransmationMatrix(result_mat);
-		}
-
-		//printf("done.\ntotal=%u[ms]\n",GetTickCount()-st);
-		printf("done.\ntotal=%.3f[s]\n",-1.0 * [start timeIntervalSinceDate:[NSDate date]]);
-		delete ra;
-		delete ar;
-		delete buf;
-	}
-	return 0;
-}
-
-void toCameraViewRH(NyARTransMatResult mat, float ogl_result[]) {
+void toCameraViewRH(NyARTransMatResult &mat, float ogl_result[]) {
 	float view_scale_factor = 0.025;
 	ogl_result[0] = mat.m00;
 	ogl_result[4] = mat.m01;
@@ -437,11 +338,11 @@ void arglCameraFrustumRH(const NyARParam& cparam, const double focalmin, const d
 	int      width, height;
     int      i, j;
 	
-	width  = cparam.getScreenSize()->w;
-    height = cparam.getScreenSize()->h;
+	width  = cparam.getScreenSize().w;
+    height = cparam.getScreenSize().h;
 	
 	double cparam_m[3][4] = {0.0};
-	const NyARPerspectiveProjectionMatrix* proj = cparam.getPerspectiveProjectionMatrix();
+	const NyARPerspectiveProjectionMatrix* proj = &cparam.getPerspectiveProjectionMatrix();
 	cparam_m[0][0] = proj->m00;
 	cparam_m[0][1] = proj->m01;
 	cparam_m[0][2] = proj->m02;

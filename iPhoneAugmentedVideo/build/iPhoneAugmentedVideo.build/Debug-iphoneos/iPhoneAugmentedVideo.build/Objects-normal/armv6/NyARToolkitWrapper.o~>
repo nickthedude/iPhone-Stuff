@@ -1,0 +1,3 @@
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitWrapper.mm:420: warning: incomplete implementation of class 'NyARToolkitWrapper'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitWrapper.mm:420: warning: method definition for '-detectMarkerWithIamge:intoMatrix:' not found
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitWrapper.mm:420: warning: method definition for '-doMain' not found

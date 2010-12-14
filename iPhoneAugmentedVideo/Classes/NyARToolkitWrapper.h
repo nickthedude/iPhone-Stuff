@@ -53,7 +53,7 @@ CGContextRef CreateARGBBitmapContext (CGImageRef inImage);
 -(bool)detectMarker:(float[])resultMat;
 -(void)setNyARTWidth:(int)width andHeight:(int)height;
 -(void)setNyARTBuffer:(Byte*)buf;
--(void)detectMarkerWithIamge:(CGImageRef)inImage intoMatrix:(float[])m;
+-(void)detectMarkerWithImage:(CGImageRef)inImage intoMatrix:(float[])m;
 -(void)getProjectionMatrix:(float[])m;
 
 @end

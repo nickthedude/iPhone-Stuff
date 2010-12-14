@@ -270,7 +270,7 @@ UIImage *scaleAndRotateImage(CGImageRef imgRef)
 		[artoolkit getProjectionMatrix:ogl_projection_matrix];
 	}
 	
-	[artoolkit detectMarkerWithIamge:scaledImgRef intoMatrix:ogl_camera_matrix];	
+	[artoolkit detectMarkerWithImage:scaledImgRef intoMatrix:ogl_camera_matrix];	
 	
 	free(brushData);
 	CGImageRelease(img);

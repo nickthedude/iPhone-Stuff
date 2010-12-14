@@ -1,0 +1,9 @@
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m: In function '-[iPhoneAugmentedTestViewController awakeFromNib]':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:62: warning: 'iPhoneAugmentedTestViewController' may not respond to '-loadShaders'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:62: warning: (Messages without a matching method signature
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:62: warning: will be assumed to return 'id' and accept
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:62: warning: '...' as arguments.)
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m: In function '-[iPhoneAugmentedTestViewController captureOutput:didOutputSampleBuffer:fromConnection:]':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:157: warning: passing argument 2 of 'performSelectorOnMainThread:withObject:waitUntilDone:' from incompatible pointer type
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m: In function '-[iPhoneAugmentedTestViewController updateTextureAndScanForMarkers:]':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/iPhoneAugmentedTestViewController.m:273: warning: 'NyARToolkitWrapper' may not respond to '-detectMarkerWithImage:intoMatrix:'

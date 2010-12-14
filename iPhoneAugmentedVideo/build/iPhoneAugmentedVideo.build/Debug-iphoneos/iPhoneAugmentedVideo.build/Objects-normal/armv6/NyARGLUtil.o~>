@@ -1,0 +1,59 @@
+In file included from /Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:26:
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.h:76: error: 'GLdouble' has not been declared
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.h:83: error: 'GLdouble' has not been declared
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp: In member function 'int NyARUtils::NyARGLUtil::getGlPixelFormat(int)':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:48: error: 'GL_BGR_EXT' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:50: error: 'GL_RGB' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:52: error: 'GL_BGRA_EXT' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp: In member function 'void NyARUtils::NyARGLUtil::drawBackGround(const NyARToolkitCPP::INyARRgbRaster&, double)':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:67: error: 'GLboolean' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:67: error: expected `;' before 'lightingSave'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:68: error: expected `;' before 'depthTestSave'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:69: error: 'GLint' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:69: error: expected `;' before 'texEnvModeSave'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:73: error: 'GL_TEXTURE_ENV' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:73: error: 'GL_TEXTURE_ENV_MODE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:73: error: 'texEnvModeSave' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:73: error: 'glGetTexEnviv' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:74: error: 'GL_REPLACE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:75: error: 'glTexEnvi' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:77: error: 'lightingSave' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:77: error: 'GL_LIGHTING' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:77: error: 'glIsEnabled' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:78: error: 'GL_TRUE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:79: error: 'glDisable' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:81: error: 'depthTestSave' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:81: error: 'GL_DEPTH_TEST' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:82: error: 'GL_TRUE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:83: error: 'glDisable' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:85: error: 'GL_PROJECTION' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:85: error: 'glMatrixMode' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:86: error: 'glPushMatrix' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:87: error: 'glLoadIdentity' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:88: error: 'gluOrtho2D' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:89: error: 'GL_MODELVIEW' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:96: error: 'glPopMatrix' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:100: error: 'glEnable' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:103: error: 'glEnable' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:105: error: 'GL_REPLACE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:106: error: 'glTexEnvi' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:108: error: 'glEnd' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp: In member function 'void NyARUtils::NyARGLUtil::arglDispImageStateful(const NyARToolkitCPP::INyARRgbRaster&, double)':
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:120: error: 'GLint' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:120: error: expected `;' before 'params'
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:122: error: 'GL_TEXTURE_2D' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:122: error: 'glDisable' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:123: error: 'GL_VIEWPORT' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:123: error: 'params' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:123: error: 'glGetIntegerv' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:124: error: 'glPixelZoom' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:125: error: 'glRasterPos2f' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:127: error: 'GL_UNPACK_ALIGNMENT' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:127: error: 'glPixelStorei' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:128: error: 'GL_UNSIGNED_BYTE' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:128: error: 'GLvoid' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:128: error: expected primary-expression before ')' token
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:128: error: 'glDrawPixels' was not declared in this scope
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp: At global scope:
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:155: error: 'GLdouble' has not been declared
+/Users/kamend/iProjects/iPhone-Stuff/iPhoneAugmentedVideo/Classes/NyARToolkitCPP-2.5.4/src.utils/opengl/NyARGLUtil.cpp:218: error: 'GLdouble' has not been declared
